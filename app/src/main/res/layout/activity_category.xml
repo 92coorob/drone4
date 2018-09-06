@@ -93,7 +93,7 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/fruitveg"
         android:layout_width="189dp"
         android:layout_height="156dp"
         android:layout_alignParentStart="true"
@@ -106,7 +106,7 @@
         android:layout_width="189dp"
         android:layout_height="156dp"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignTop="@+id/fruitveg"
         android:layout_marginEnd="16dp"
         app:srcCompat="@drawable/frozen" />
 

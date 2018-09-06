@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
-    android:visibility="visible"
-    tools:context=".HomePage">
+    tools:context=".AppleItem">
+
 
     <Button
         android:id="@+id/home"
@@ -15,90 +15,140 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
         android:layout_marginTop="51dp"
-        android:background="?android:attr/colorActivatedHighlight"
-        android:text="Home" />
+        android:background="#aa5506"
+        android:text="Category"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/category"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
 
     <Button
         android:id="@+id/account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/home"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="51dp"
         android:layout_toEndOf="@+id/category"
         android:layout_toRightOf="@+id/category"
-        android:background="#aa5506"
-        android:text="Account" />
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/home"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
 
     <Button
         android:id="@+id/category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/home"
+        android:layout_marginBottom="8dp"
+
+
+        android:layout_marginTop="51dp"
         android:layout_toEndOf="@+id/home"
         android:layout_toRightOf="@+id/home"
         android:background="?android:attr/colorActivatedHighlight"
-
-
-        android:text="Category" />
+        android:text="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
 
     <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="150dp"
-        android:layout_height="208dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="108dp"
+        android:id="@+id/imageView10"
+        android:layout_width="141dp"
+        android:layout_height="154dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account"
         app:srcCompat="@drawable/user" />
 
     <Button
         android:id="@+id/userInformation"
         android:layout_width="157dp"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="220dp"
-        android:layout_marginStart="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:background="#aa5506"
-        android:text="User Information" />
+        android:text="User Information"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="389dp" />
 
     <Button
         android:id="@+id/payment"
         android:layout_width="105dp"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/userInformation"
-        android:layout_marginRight="9dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
         android:background="?android:attr/colorActivatedHighlight"
-        android:text="Payment" />
+        android:text="Payment"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="389dp" />
 
     <Button
         android:id="@+id/orderHistory"
         android:layout_width="133dp"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
         android:layout_alignTop="@+id/userInformation"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="12dp"
         android:layout_toEndOf="@+id/userInformation"
         android:background="?android:attr/colorActivatedHighlight"
-        android:text="Order History" />
+        android:text="Order History"
+        app:layout_constraintEnd_toStartOf="@+id/payment"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/userInformation"
+        tools:layout_editor_absoluteY="389dp" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Robert Cook" />
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Robert Cook"
+        app:layout_constraintBottom_toTopOf="@+id/orderHistory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
     <ScrollView
-        android:layout_width="390dp"
-        android:layout_height="218dp"
+        android:layout_width="421dp"
+        android:layout_height="166dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="0dp"
-        android:layout_marginEnd="10dp">
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderHistory">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/firstName"
@@ -121,6 +171,7 @@
                 android:text="Family Name"
                 android:textSize="20dp"
                 android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/familyNameEntry"
                 android:layout_width="match_parent"
@@ -148,6 +199,7 @@
                 android:text="Address 2"
                 android:textSize="20dp"
                 android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/address2Entry"
                 android:layout_width="match_parent"
@@ -165,5 +217,4 @@
         </LinearLayout>
     </ScrollView>
 
-
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

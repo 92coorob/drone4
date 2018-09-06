@@ -19,7 +19,9 @@
         <activity android:name=".HomePage" />
         <activity android:name=".Category" />
         <activity android:name=".Account" />
-        <activity android:name=".Items"></activity>
+        <activity android:name=".Items" />
+        <activity android:name=".FruitAndVeg" />
+        <activity android:name=".AppleItem" />
     </application>
 
 </manifest>
