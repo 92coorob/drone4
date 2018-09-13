@@ -22,6 +22,9 @@
         <activity android:name=".Items" />
         <activity android:name=".FruitAndVeg" />
         <activity android:name=".AppleItem" />
+        <activity android:name=".Register" />
+        <activity android:name=".BananaItem" />
+        <activity android:name=".BroccoliItem"></activity>
     </application>
 
 </manifest>

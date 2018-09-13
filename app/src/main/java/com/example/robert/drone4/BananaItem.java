@@ -6,16 +6,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class AppleItem extends AppCompatActivity {
+public class BananaItem extends AppCompatActivity {
 
     private Button Home;
     private Button Account;
-    private  Button Add;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_apple_item);
+        setContentView(R.layout.activity_banana_item);
+
 
         Home = findViewById(R.id.home);
         Account = findViewById(R.id.account);
@@ -23,7 +23,7 @@ public class AppleItem extends AppCompatActivity {
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goToHomePage = new Intent(AppleItem.this, HomePage.class);
+                Intent goToHomePage = new Intent(BananaItem.this, HomePage.class);
                 startActivity(goToHomePage);
             }
         });
@@ -32,7 +32,7 @@ public class AppleItem extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent goToAccount = new Intent(AppleItem.this, Account.class);
+                Intent goToAccount = new Intent(BananaItem.this, Account.class);
                 startActivity(goToAccount);
 
             }

@@ -12,6 +12,7 @@ public class FruitAndVeg extends AppCompatActivity {
     private Button Home;
     private Button Account;
     private ImageView Apple;
+    private ImageView Banana;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,7 @@ public class FruitAndVeg extends AppCompatActivity {
         Home = findViewById(R.id.home);
         Account = findViewById(R.id.account);
         Apple = findViewById(R.id.apple);
+        Banana = findViewById(R.id.banana);
 
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +36,13 @@ public class FruitAndVeg extends AppCompatActivity {
             public void onClick(View v) {
                 Intent goToApple = new Intent(FruitAndVeg.this, AppleItem.class);
                 startActivity(goToApple);
+            }
+        });
+        Banana.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToBanana = new Intent(FruitAndVeg.this, BananaItem.class);
+                startActivity(goToBanana);
             }
         });
         Account.setOnClickListener(new View.OnClickListener() {
