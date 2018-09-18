@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class BroccoliItem extends AppCompatActivity {
+public class WatermelonItem extends AppCompatActivity {
 
     private Button Home;
     private Button Account;
@@ -15,7 +15,7 @@ public class BroccoliItem extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_broccoli_item);
+        setContentView(R.layout.activity_watermelon_item);
 
         Home = findViewById(R.id.home);
         Account = findViewById(R.id.account);
@@ -23,7 +23,7 @@ public class BroccoliItem extends AppCompatActivity {
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goToHomePage = new Intent(BroccoliItem.this, HomePage.class);
+                Intent goToHomePage = new Intent(WatermelonItem.this, HomePage.class);
                 startActivity(goToHomePage);
             }
         });
@@ -32,7 +32,7 @@ public class BroccoliItem extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent goToAccount = new Intent(BroccoliItem.this, Account.class);
+                Intent goToAccount = new Intent(WatermelonItem.this, Account.class);
                 startActivity(goToAccount);
 
             }

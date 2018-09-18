@@ -8,6 +8,15 @@
     tools:context=".HomePage">
 
 
+    <Button
+        android:id="@+id/track"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/home"
+        android:layout_toEndOf="@+id/account"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Track Your Order" />
+
     <ImageView
         android:id="@+id/imageView16"
         android:layout_width="180dp"

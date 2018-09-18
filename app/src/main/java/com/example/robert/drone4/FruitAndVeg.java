@@ -13,6 +13,12 @@ public class FruitAndVeg extends AppCompatActivity {
     private Button Account;
     private ImageView Apple;
     private ImageView Banana;
+    private ImageView Broccoli;
+    private ImageView Carrot;
+    private ImageView Orange;
+    private ImageView Watermelon;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,8 +27,12 @@ public class FruitAndVeg extends AppCompatActivity {
 
         Home = findViewById(R.id.home);
         Account = findViewById(R.id.account);
-        Apple = findViewById(R.id.apple);
-        Banana = findViewById(R.id.banana);
+        Apple = findViewById(R.id.chicken);
+        Banana = findViewById(R.id.fish);
+        Broccoli = findViewById(R.id.shrimp);
+        Carrot = findViewById(R.id.burger);
+        Orange = findViewById(R.id.beef);
+        Watermelon = findViewById(R.id.bacon);
 
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +61,42 @@ public class FruitAndVeg extends AppCompatActivity {
 
                 Intent goToAccount = new Intent(FruitAndVeg.this, Account.class);
                 startActivity(goToAccount);
+
+            }
+        });
+        Broccoli.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent goToBroccoli = new Intent(FruitAndVeg.this, BroccoliItem.class);
+                startActivity(goToBroccoli);
+
+            }
+        });
+        Carrot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent goToCarrot = new Intent(FruitAndVeg.this, CarrotItem.class);
+                startActivity(goToCarrot);
+
+            }
+        });
+        Orange.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent goToOrange = new Intent(FruitAndVeg.this, OrangeItem.class);
+                startActivity(goToOrange);
+
+            }
+        });
+        Watermelon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent goToWatermelon = new Intent(FruitAndVeg.this, WatermelonItem.class);
+                startActivity(goToWatermelon);
 
             }
         });

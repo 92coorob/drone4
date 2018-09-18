@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -12,28 +11,29 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView2"
-        android:layout_toEndOf="@+id/account"
-        android:text="Watermelon" />
+        android:layout_alignStart="@+id/textView_address1"
+        android:layout_below="@+id/beef"
+        android:layout_marginTop="-51dp"
+        android:text="Bacon" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView8"
-        android:layout_below="@+id/bacon"
-        android:layout_marginTop="-42dp"
-        android:text="Orange" />
+        android:layout_alignTop="@+id/textView3"
+        android:text="Beef mince" />
 
     <ImageView
         android:id="@+id/burger"
         android:layout_width="135dp"
         android:layout_height="152dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/shrimp"
+        android:layout_alignParentBottom="true"
 
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="212dp"
         android:layout_marginEnd="46dp"
-        app:srcCompat="@drawable/carrot" />
+        app:srcCompat="@drawable/burger" />
 
     <ImageView
         android:id="@+id/beef"
@@ -43,7 +43,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/shrimp"
         android:layout_marginBottom="51dp"
-        app:srcCompat="@drawable/orange" />
+        app:srcCompat="@drawable/beef" />
 
     <Button
         android:id="@+id/home"
@@ -79,23 +79,22 @@
 
     <ImageView
         android:id="@+id/chicken"
-        android:layout_width="158dp"
-        android:layout_height="116dp"
-        android:layout_alignParentStart="true"
+        android:layout_width="124dp"
+        android:layout_height="103dp"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="155dp"
-        app:srcCompat="@drawable/apple" />
+        android:layout_marginTop="166dp"
+        android:layout_toStartOf="@+id/account"
+        app:srcCompat="@drawable/chicken" />
 
     <ImageView
         android:id="@+id/fish"
         android:layout_width="106dp"
         android:layout_height="134dp"
+        android:layout_above="@+id/textView"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
+        android:layout_marginBottom="-292dp"
         android:layout_marginEnd="63dp"
-        android:layout_marginTop="147dp"
-        app:srcCompat="@drawable/banana" />
+        app:srcCompat="@drawable/salmon" />
 
     <TextView
         android:id="@+id/textView"
@@ -104,7 +103,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="292dp"
         android:layout_toEndOf="@+id/home"
-        android:text="Apple" />
+        android:text="Chicken" />
 
     <TextView
         android:id="@+id/textView_address1"
@@ -112,17 +111,18 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView9"
         android:layout_alignTop="@+id/textView"
-        android:text="Banana" />
+        android:text="Fish" />
 
     <ImageView
         android:id="@+id/shrimp"
-        android:layout_width="99dp"
-        android:layout_height="136dp"
+        android:layout_width="92dp"
+        android:layout_height="93dp"
 
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView"
-        android:layout_marginStart="56dp"
-        app:srcCompat="@drawable/broccoli" />
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="41dp"
+        app:srcCompat="@drawable/shrimp" />
 
     <TextView
         android:id="@+id/textView8"
@@ -132,17 +132,17 @@
         android:layout_alignParentStart="true"
         android:layout_marginBottom="204dp"
         android:layout_marginStart="80dp"
-        android:text="Broccoli" />
+        android:text="Shrimp" />
 
     <ImageView
         android:id="@+id/bacon"
-        android:layout_width="90dp"
-        android:layout_height="93dp"
+        android:layout_width="108dp"
+        android:layout_height="119dp"
 
-        android:layout_alignEnd="@+id/fish"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="72dp"
-        app:srcCompat="@drawable/watermelon" />
+        android:layout_alignBottom="@+id/beef"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="53dp"
+        app:srcCompat="@drawable/bacon" />
 
     <TextView
         android:id="@+id/textView9"
@@ -151,6 +151,6 @@
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/textView8"
         android:layout_marginEnd="94dp"
-        android:text="Carrot" />
+        android:text="Burger" />
 
 </RelativeLayout>

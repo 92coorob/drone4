@@ -11,6 +11,9 @@ public class Category extends AppCompatActivity {
     private Button Home;
     private Button Account;
     private ImageView Fruit;
+    private ImageView Meat;
+    private ImageView Beverages;
+    private ImageView Alcohol;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +24,9 @@ public class Category extends AppCompatActivity {
         Home = findViewById(R.id.home);
         Account = findViewById(R.id.account);
         Fruit = findViewById(R.id.fruitveg);
+        Meat = findViewById(R.id.meat);
+        Beverages = findViewById(R.id.beverages);
+        Alcohol = findViewById(R.id.alcohol);
 
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,5 +51,28 @@ public class Category extends AppCompatActivity {
                 startActivity(goToFruitAndVeg);
             }
         });
+        Meat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToMeats = new Intent(Category.this, Meats.class);
+                startActivity(goToMeats);
+            }
+        });
+        Beverages.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToBeverages = new Intent(Category.this, Beverages.class);
+                startActivity(goToBeverages);
+            }
+        });
+
+        Alcohol.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToAlcohol = new Intent(Category.this, Alcohol.class);
+                startActivity(goToAlcohol);
+            }
+        });
+
     }
 }

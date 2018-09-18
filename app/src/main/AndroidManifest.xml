@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.robert.drone4">
 
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,7 +31,48 @@
         <activity android:name=".AppleItem" />
         <activity android:name=".Register" />
         <activity android:name=".BananaItem" />
-        <activity android:name=".BroccoliItem"></activity>
+        <activity android:name=".BroccoliItem" />
+        <activity android:name=".CarrotItem" />
+        <activity android:name=".OrangeItem" />
+        <activity android:name=".WatermelonItem" />
+        <activity android:name=".Beverages" />
+        <activity android:name=".Meats" />
+        <activity android:name=".Alcohol" />
+        <activity android:name=".Chicken" />
+        <activity android:name=".Fish" />
+        <activity android:name=".Shrimp" />
+        <activity android:name=".Burger" />
+        <activity android:name=".Beef" />
+        <activity android:name=".Bacon" />
+        <activity android:name=".CokeItem" />
+        <activity android:name=".SpriteItem" />
+        <activity android:name=".FantaItem" />
+        <activity android:name=".lipton" />
+        <activity android:name=".WaterItem" />
+        <activity android:name=".ChocolateItem" />
+        <activity android:name=".BeerItem" />
+        <activity android:name=".CiderItem" />
+        <activity android:name=".WhiteItem" />
+        <activity android:name=".RedItem" />
+        <activity android:name=".ChampagneItem" />
+        <activity android:name=".VodkaItem" />
+        <activity android:name=".ShoppingCart" />
+        <activity android:name=".TrackOrder" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
     </application>
 
 </manifest>

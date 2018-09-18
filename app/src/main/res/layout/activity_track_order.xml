@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrackOrder">
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estimated Arrival: 4:20 pm"
+        android:textSize="17dp"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="223dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Flying"
+        android:textColor="#00e600"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="162dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track Your Order"
+        android:textSize="40dp"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="346dp"
+        android:layout_height="329dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="298dp" />
+
+</android.support.constraint.ConstraintLayout>

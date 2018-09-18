@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingCart">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shopping Cart"
+        android:textSize="40dp"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="136dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivery Fee:"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checkout"
+        android:background="?android:attr/colorActivatedHighlight"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="598dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="395dp"
+        android:layout_height="348dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="228dp" />
+</android.support.constraint.ConstraintLayout>

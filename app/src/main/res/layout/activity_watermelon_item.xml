@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BroccoliItem">
-
+    tools:context=".WatermelonItem">
     <Button
         android:id="@+id/home"
         android:layout_width="wrap_content"
@@ -75,7 +74,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.354"
-        app:srcCompat="@drawable/broccoli" />
+        app:srcCompat="@drawable/watermelon" />
 
     <TextView
         android:id="@+id/textView10"
@@ -87,14 +86,14 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Broccoli"
+        android:text="Watermelon"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.01" />
+        app:layout_constraintVertical_bias="0.12" />
 
     <TextView
         android:id="@+id/textView11"
