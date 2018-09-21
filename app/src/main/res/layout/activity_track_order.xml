@@ -1,45 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TrackOrder">
 
+    <Button
+        android:id="@+id/home_track"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Home" />
+
     <TextView
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="164dp"
         android:text="Estimated Arrival: 4:20 pm"
-        android:textSize="17dp"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="223dp" />
+        android:textSize="17dp" />
 
     <TextView
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="103dp"
         android:text="Status: Flying"
         android:textColor="#00e600"
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="162dp" />
+        android:textSize="25dp" />
 
     <TextView
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_marginTop="28dp"
         android:text="Track Your Order"
-        android:textSize="40dp"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="66dp" />
+        android:textSize="40dp" />
 
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/map"
-        android:layout_width="346dp"
-        android:layout_height="329dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="298dp" />
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="328dp"
+        android:layout_height="333dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
 
-</android.support.constraint.ConstraintLayout>
+
+        app:srcCompat="@drawable/map" />
+
+</RelativeLayout>

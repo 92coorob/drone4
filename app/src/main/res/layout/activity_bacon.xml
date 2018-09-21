@@ -8,24 +8,64 @@
 
 
     <Button
-        android:id="@+id/home"
-        android:layout_width="wrap_content"
+        android:id="@+id/add_apple2"
+        android:layout_width="107dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="51dp"
-        android:background="#aa5506"
-        android:text="Category"
+        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginLeft="149dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="20dp"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Add to cart"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/account3"
+        android:layout_width="86dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@+id/home"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="51dp"
+        android:layout_toEndOf="@+id/category"
+        android:layout_toRightOf="@+id/category"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/home"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.046" />
 
     <Button
-        android:id="@+id/account"
-        android:layout_width="wrap_content"
+        android:id="@+id/account2"
+        android:layout_width="86dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@+id/home"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="51dp"
+        android:layout_toEndOf="@+id/category"
+        android:layout_toRightOf="@+id/category"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Track"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toEndOf="@+id/home"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <Button
+        android:id="@+id/account4"
+        android:layout_width="82dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/home"
         android:layout_marginBottom="8dp"
@@ -44,8 +84,24 @@
         app:layout_constraintVertical_bias="0.046" />
 
     <Button
+        android:id="@+id/home"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="51dp"
+        android:background="#aa5506"
+        android:text="Category"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/category"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <Button
         android:id="@+id/category"
-        android:layout_width="wrap_content"
+        android:layout_width="83dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/home"
         android:layout_marginBottom="8dp"
@@ -73,10 +129,10 @@
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintHorizontal_bias="0.408"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.393"
+        app:layout_constraintVertical_bias="0.291"
         app:srcCompat="@drawable/bacon" />
 
     <TextView
@@ -95,7 +151,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintVertical_bias="0.045" />
 
     <TextView
         android:id="@+id/textView11"
@@ -112,6 +168,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10"
-        app:layout_constraintVertical_bias="0.268" />
+        app:layout_constraintVertical_bias="0.013" />
 
 </android.support.constraint.ConstraintLayout>

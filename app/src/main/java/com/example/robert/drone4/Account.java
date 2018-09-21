@@ -9,7 +9,7 @@ import android.widget.Button;
 public class Account extends AppCompatActivity {
 
     private Button Category;
-    private Button Account;
+    private Button Home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public class Account extends AppCompatActivity {
 
 
         Category = findViewById(R.id.category);
-        Account = findViewById(R.id.account);
+        Home = findViewById(R.id.home);
 
         Category.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,11 +27,11 @@ public class Account extends AppCompatActivity {
                 startActivity(goToCategory);
             }
         });
-        Account.setOnClickListener(new View.OnClickListener() {
+        Home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent goToCategory = new Intent(Account.this, Category.class);
+                Intent goToCategory = new Intent(Account.this, HomePage.class);
                 startActivity(goToCategory);
 
             }

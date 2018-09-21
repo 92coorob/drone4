@@ -9,35 +9,35 @@
 
 
     <Button
-        android:id="@+id/track"
-        android:layout_width="147dp"
+        android:id="@+id/track3"
+        android:layout_width="71dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/home"
         android:layout_toEndOf="@+id/account"
         android:background="?android:attr/colorActivatedHighlight"
-        android:text="Track Your Order" />
+        android:text="Track" />
 
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="180dp"
-        android:layout_height="153dp"
+    <Button
+        android:id="@+id/cart"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/imageView13"
-        app:srcCompat="@drawable/bread" />
+        android:layout_alignTop="@+id/track"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Cart" />
 
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="180dp"
-        android:layout_height="153dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="13dp"
-        app:srcCompat="@drawable/fruit"
-        tools:ignore="RtlCompat" />
+    <Button
+        android:id="@+id/track"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/home"
+        android:layout_toEndOf="@+id/account"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Track" />
 
     <Button
         android:id="@+id/home"
-        android:layout_width="wrap_content"
+        android:layout_width="73dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -58,7 +58,7 @@
 
     <Button
         android:id="@+id/category"
-        android:layout_width="wrap_content"
+        android:layout_width="98dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/home"
         android:layout_toEndOf="@+id/home"
@@ -70,9 +70,8 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="249dp"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/home"
+        android:layout_below="@+id/track"
         app:srcCompat="@drawable/milk" />
 
     <ImageView
@@ -80,8 +79,18 @@
         android:layout_width="180dp"
         android:layout_height="153dp"
         android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView7"
+        app:srcCompat="@drawable/fruit"
+        tools:ignore="RtlCompat" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="180dp"
+        android:layout_height="153dp"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="186dp"
+        android:layout_marginBottom="162dp"
+        android:layout_marginStart="14dp"
         app:srcCompat="@drawable/fruit"
         tools:ignore="RtlCompat" />
 
@@ -89,8 +98,17 @@
         android:id="@+id/imageView9"
         android:layout_width="180dp"
         android:layout_height="153dp"
-        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/imageView2"
         android:layout_alignTop="@+id/imageView6"
+        app:srcCompat="@drawable/bread" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="180dp"
+        android:layout_height="153dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_marginEnd="21dp"
         app:srcCompat="@drawable/bread" />
 
 </RelativeLayout>

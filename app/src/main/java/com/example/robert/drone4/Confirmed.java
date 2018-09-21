@@ -5,24 +5,25 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-public class ShoppingCart extends AppCompatActivity {
 
-    private Button Payment;
+public class Confirmed extends AppCompatActivity {
+
+    private Button Track;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shopping_cart);
+        setContentView(R.layout.activity_confirmed);
 
-        Payment = findViewById(R.id.checkout);
+        Track = findViewById(R.id.track);
 
 
-        Payment.setOnClickListener(new View.OnClickListener() {
+        Track.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent goToCategory = new Intent(ShoppingCart.this, Payment.class);
-                startActivity(goToCategory);
+                Intent goToTrack = new Intent(Confirmed.this, TrackOrder.class);
+                startActivity(goToTrack);
 
             }
         });

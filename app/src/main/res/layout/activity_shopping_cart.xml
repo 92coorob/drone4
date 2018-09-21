@@ -10,40 +10,86 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="79dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="55dp"
         android:text="Shopping Cart"
         android:textSize="40dp"
-        tools:layout_editor_absoluteX="79dp"
-        tools:layout_editor_absoluteY="55dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginLeft="176dp"
+        android:layout_marginRight="178dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="27dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="136dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Delivery Fee:"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginLeft="79dp"
+        android:layout_marginRight="102dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="12dp"
+        android:text="Delivery Fee:  $14.90"
         android:textSize="25dp"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="178dp" />
+        app:layout_constraintBottom_toTopOf="@+id/shopping_cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/checkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Checkout"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginLeft="157dp"
+        android:layout_marginRight="166dp"
+        android:layout_marginStart="157dp"
         android:background="?android:attr/colorActivatedHighlight"
-        tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="598dp" />
+        android:text="Checkout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="395dp"
-        android:layout_height="348dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="228dp" />
+    <TextView
+        android:id="@+id/shopping_cart"
+        android:layout_width="188dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginLeft="149dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cart"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="307dp" />
+
 </android.support.constraint.ConstraintLayout>

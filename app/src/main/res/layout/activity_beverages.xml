@@ -45,6 +45,24 @@
         app:srcCompat="@drawable/water" />
 
     <Button
+        android:id="@+id/cart"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/track"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Cart" />
+
+    <Button
+        android:id="@+id/track"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/home"
+        android:layout_toEndOf="@+id/account"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Track" />
+
+    <Button
         android:id="@+id/home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

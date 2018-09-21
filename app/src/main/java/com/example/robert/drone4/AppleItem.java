@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class AppleItem extends AppCompatActivity {
 
@@ -20,6 +21,8 @@ public class AppleItem extends AppCompatActivity {
         Home = findViewById(R.id.home);
         Account = findViewById(R.id.account);
 
+
+
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,10 +35,28 @@ public class AppleItem extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+
+
                 Intent goToAccount = new Intent(AppleItem.this, Account.class);
                 startActivity(goToAccount);
 
             }
         });
+
+        Account.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+
+                Intent goToAccount = new Intent(AppleItem.this, Account.class);
+                startActivity(goToAccount);
+
+            }
+        });
+
+
+
+
     }
 }

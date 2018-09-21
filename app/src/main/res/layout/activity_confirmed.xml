@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Confirmed">
+
+    <Button
+        android:id="@+id/checkout2"
+        android:layout_width="167dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="112dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginLeft="157dp"
+        android:layout_marginRight="166dp"
+        android:layout_marginStart="157dp"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Track Your Order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="79dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="396dp"
+        android:text="Payment Confirmed"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="249dp"
+        android:layout_height="229dp"
+        android:src="@drawable/greencheck"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="107dp" />
+</android.support.constraint.ConstraintLayout>
